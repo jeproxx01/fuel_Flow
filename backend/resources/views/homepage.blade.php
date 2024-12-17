@@ -27,6 +27,24 @@
             align-items: center;
         }
 
+        .nav-center {
+            display: flex;
+            gap: 2rem;
+            margin: 0 1rem;
+        }
+
+        .nav-center a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            white-space: nowrap;
+        }
+
+        .nav-center a:hover {
+            opacity: 1;
+        }
+
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
@@ -42,6 +60,25 @@
 
         .nav-links a:hover {
             opacity: 1;
+        }
+
+        .nav-links .auth-button {
+            padding: 0.5rem 1.5rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s;
+        }
+
+        .nav-links .login {
+            border: 1px solid white;
+        }
+
+        .nav-links .signup {
+            background-color: white;
+            color: #1e3a8a;
+        }
+
+        .nav-links .auth-button:hover {
+            transform: translateY(-2px);
         }
 
         .hero {
@@ -112,11 +149,16 @@
     <nav class="navbar">
         <div class="navbar-content">
             <div class="logo">Fuel Flow</div>
+            <div class="nav-center">
+                <a href="/fuels">Our Fuels</a>
+                <a href="/services">Services</a>
+                <a href="/news">News & Promos</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+            </div>
             <div class="nav-links">
-                <a href="/homepage">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/auth">Login</a>
+                <a href="/auth" class="auth-button login">Login</a>
+                <a href="/auth" class="auth-button signup">Signup</a>
             </div>
         </div>
     </nav>
@@ -124,7 +166,7 @@
     <section class="hero">
         <h1>Welcome to Fuel Flow</h1>
         <p>Your comprehensive solution for efficient fuel management and tracking. Take control of your fuel consumption and costs today.</p>
-        <a href="/auth" class="cta-button">Get Started</a>
+        <a href="/auth" class="cta-button">Register Now</a>
     </section>
 
     <section class="features">
