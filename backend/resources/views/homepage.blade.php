@@ -12,11 +12,13 @@
             background-color: #1e3a8a;
             font-family: Arial, sans-serif;
             color: white;
+            font-size: 16px;
         }
 
         .navbar {
             background-color: rgba(0, 0, 0, 0.2);
             padding: 1rem 2rem;
+            font-size: 1.1rem;
         }
 
         .navbar-content {
@@ -39,6 +41,8 @@
             opacity: 0.8;
             transition: opacity 0.3s;
             white-space: nowrap;
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
         .nav-center a:hover {
@@ -46,8 +50,9 @@
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
+            height: 120px;
+            width: auto;
+           display: block;
         }
 
         .nav-links a {
@@ -148,7 +153,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-content">
-            <div class="logo">Fuel Flow</div>
+            <img src="{{ asset('images/logo2.png') }}" class="logo">
             <div class="nav-center">
                 <a href="/fuels">Our Fuels</a>
                 <a href="/services">Services</a>
@@ -169,22 +174,6 @@
         <a href="/auth" class="cta-button">Register Now</a>
     </section>
 
-    <section class="features">
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>Track Consumption</h3>
-                <p>Monitor and analyze your fuel consumption patterns with detailed insights.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Cost Management</h3>
-                <p>Keep track of your fuel expenses and optimize your spending.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Real-time Analytics</h3>
-                <p>Get instant insights into your fuel usage and efficiency metrics.</p>
-            </div>
-        </div>
-    </section>
 
     <footer class="footer">
         <p>&copy; 2024 Fuel Flow. All rights reserved.</p>
