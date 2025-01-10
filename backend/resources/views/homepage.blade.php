@@ -162,8 +162,8 @@
                 <a href="/contact">Contact Us</a>
             </div>
             <div class="nav-links">
-                <a href="/auth" class="auth-button login">Login</a>
-                <a href="/auth" class="auth-button signup">Signup</a>
+                <a href="/login" class="auth-button login">Login</a>
+                <a href="/login" class="auth-button signup">Signup</a>
             </div>
         </div>
     </nav>
