@@ -162,8 +162,8 @@
                 <a href="/contact">Contact Us</a>
             </div>
             <div class="nav-links">
-                <a href="/login" class="auth-button login">Login</a>
-                <a href="/login" class="auth-button signup">Signup</a>
+                <a href="{{ route('login') }}" class="auth-button login">Login</a>
+                <a href="{{ route('register') }}" class="auth-button signup">Signup</a>
             </div>
         </div>
     </nav>
@@ -171,7 +171,7 @@
     <section class="hero">
         <h1>Welcome to Fuel Flow</h1>
         <p>Your comprehensive solution for efficient fuel management and tracking. Take control of your fuel consumption and costs today.</p>
-        <a href="/auth" class="cta-button">Register Now</a>
+        <a href="{{ route('register') }}" class="cta-button">Register Now</a>
     </section>
 
 
